@@ -17,11 +17,6 @@ const flags = {
   ukrainian: '/flags/ukrainian.png',
 };
 
-
-
-
-
-
 const menuTypes = ['entries', 'pizzas', 'salads', 'risottos', 'pastas', 'meats', 'fish', 'desserts'];
 
 const MenuScreen = () => {
@@ -60,11 +55,11 @@ const MenuScreen = () => {
         backgroundSize: 'cover'
       }}
     >
-      <div className="container mx-auto">
-        <div className="text-center py-4">
-        {menuTypes.map(type => (
+       <div className="container mx-auto">
+        <div className="flex flex-wrap justify-center py-4">
+          {menuTypes.map(type => (
             <button key={type} onClick={() => setMenuType(type)}
-              className={`mx-2 px-4 py-2 rounded-lg text-black font-medium ${menuType === type ? 'bg-green-500' : 'bg-gray-100 hover:bg-gray-300'}`}>
+              className={`mx-1 my-1 px-4 py-2 rounded-lg text-black font-medium ${menuType === type ? 'bg-green-500' : 'bg-gray-100 hover:bg-gray-200'}`}>
               {menuTranslations[selectedLanguage][type]}
             </button>
           ))}
