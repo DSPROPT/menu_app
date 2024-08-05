@@ -88,6 +88,17 @@ import { desserts as dutchDesserts } from './dutch/desserts';
 import { desserts as russianDesserts } from './russian/desserts';
 import { desserts as ukrainianDesserts } from './ukrainian/desserts';
 
+// Menu of the Day
+import { menuOfDay as englishMenuOfDay } from './english/menu_of_day';
+import { menuOfDay as spanishMenuOfDay } from './spanish/menu_of_day';
+import { menuOfDay as portugueseMenuOfDay } from './portuguese/menu_of_day';
+import { menuOfDay as germanMenuOfDay } from './german/menu_of_day';
+import { menuOfDay as italianMenuOfDay } from './italian/menu_of_day';
+import { menuOfDay as frenchMenuOfDay } from './french/menu_of_day';
+import { menuOfDay as dutchMenuOfDay } from './dutch/menu_of_day';
+import { menuOfDay as russianMenuOfDay } from './russian/menu_of_day';
+import { menuOfDay as ukrainianMenuOfDay } from './ukrainian/menu_of_day';
+
 // Exporting the combined menu
 export const menus = {
   pizzas: {
@@ -177,5 +188,16 @@ export const menus = {
     dutch: dutchDesserts,
     russian: russianDesserts,
     ukrainian: ukrainianDesserts
+  },
+  menuOfDay: {
+    english: englishMenuOfDay,
+    spanish: spanishMenuOfDay,
+    portuguese: portugueseMenuOfDay,
+    german: germanMenuOfDay,
+    italian: italianMenuOfDay,
+    french: frenchMenuOfDay,
+    dutch: dutchMenuOfDay,
+    russian: russianMenuOfDay,
+    ukrainian: ukrainianMenuOfDay
   }
 };

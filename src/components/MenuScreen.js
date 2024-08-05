@@ -4,6 +4,7 @@ import MenuItemCard from './MenuItemCard';
 import PizzaItemCard from './PizzaItemCard';
 import { menus } from './menu/menu';
 import { menuTranslations } from './menu_translations';
+import MenuOfDay from './MenuOfDay';
 
 const flags = {
   english: '/flags/english.png',
@@ -17,7 +18,7 @@ const flags = {
   ukrainian: '/flags/ukrainian.png',
 };
 
-const menuTypes = ['entries', 'pizzas', 'salads', 'risottos', 'pastas', 'meats', 'fish', 'desserts'];
+const menuTypes = ['entries', 'pizzas', 'salads', 'risottos', 'pastas', 'meats', 'fish', 'desserts', 'menuOfDay'];
 
 const MenuScreen = () => {
   const { state } = useLocation();
@@ -26,24 +27,37 @@ const MenuScreen = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(language);
   const [currentMenu, setCurrentMenu] = useState([]);
 
+  const menuOfDayData = {
+    english: menus.menuOfDay.english,
+    spanish: menus.menuOfDay.spanish,
+    portuguese: menus.menuOfDay.portuguese,
+    german: menus.menuOfDay.german,
+    italian: menus.menuOfDay.italian,
+    french: menus.menuOfDay.french,
+    dutch: menus.menuOfDay.dutch,
+    russian: menus.menuOfDay.russian,
+    ukrainian: menus.menuOfDay.ukrainian
+  };
+
   useEffect(() => {
-    const menuData = menus[menuType][selectedLanguage];
-    setCurrentMenu(menuData || []);
+    if (menuType !== 'menuOfDay') {
+      const menuData = menus[menuType][selectedLanguage];
+      setCurrentMenu(menuData || []);
+    }
   }, [selectedLanguage, menuType]);
 
   const renderMenuItem = (item) => {
     const commonProps = {
       ...item,
-      language: selectedLanguage // Ensure the selected language is passed
+      language: selectedLanguage
     };
-  
+
     if (menuType === 'pizzas') {
       return <PizzaItemCard key={item.id} {...commonProps} />;
     } else {
       return <MenuItemCard key={item.id} {...commonProps} />;
     }
   };
-  
 
   return (
     <div
@@ -55,7 +69,7 @@ const MenuScreen = () => {
         backgroundSize: 'cover'
       }}
     >
-       <div className="container mx-auto">
+      <div className="container mx-auto">
         <div className="flex flex-wrap justify-center py-4">
           {menuTypes.map(type => (
             <button key={type} onClick={() => setMenuType(type)}
@@ -73,10 +87,13 @@ const MenuScreen = () => {
           ))}
         </div>
 
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-          {currentMenu.length > 0 ? currentMenu.map(renderMenuItem) : <p className="col-span-full text-center text-xl text-white">No items available</p>}
-        </div>
+        {menuType === 'menuOfDay' ? (
+          <MenuOfDay language={selectedLanguage} menuOfDay={menuOfDayData[selectedLanguage]} />
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+            {currentMenu.length > 0 ? currentMenu.map(renderMenuItem) : <p className="col-span-full text-center text-xl text-white">No items available</p>}
+          </div>
+        )}
 
         {menuType === 'pizzas' && (
           <div className="text-center my-4 p-4 bg-white bg-opacity-80 rounded-lg shadow-md">
