@@ -71,6 +71,7 @@ const Welcome = () => {
       <div className="bg-white bg-opacity-60 p-8 rounded-lg shadow-xl text-center">
         <img src="/logo.png" alt="Restaurant Logo" className="mx-auto h-32 mb-4" />
         <h1 className="text-4xl font-bold mb-4">{welcome}</h1>
+        <img src="/restaurant.jpg" alt="Restaurant" className="mx-auto h-64 mb-4" />
         <p className="text-xl mb-4">{selectLanguage}</p>
         <div className="flex">
           {Object.keys(flags).map(langKey => (
