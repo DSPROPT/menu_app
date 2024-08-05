@@ -7,7 +7,14 @@ export const menuTranslations = {
     pastas: "Pastas",
     meats: "Meats & Sandwiches",
     fish: "Fish",
-    desserts: "Desserts"
+    desserts: "Desserts",
+    extraIngredients: "Extra Ingredients",
+    ingredientsList: [
+      "Pineapple", "Capers", "Olives", "Eggplant", "Onion", "Mushrooms", 
+      "Courgette", "Spinach", "Sweetcorn", "Peppers", "Rocket", 
+      "Tomato", "Tuna", "Shrimp", "Anchovies", "Bacon", "Bolognese", 
+      "Ham", "Chicken", "Egg", "Pepperoni", "Mozzarella"
+    ]
   },
   spanish: {
     entries: "Entradas",
@@ -17,7 +24,14 @@ export const menuTranslations = {
     pastas: "Pastas",
     meats: "Carnes & Sándwiches",
     fish: "Pescados",
-    desserts: "Postres"
+    desserts: "Postres",
+    extraIngredients: "Ingredientes Extra",
+    ingredientsList: [
+      "Piña", "Alcaparras", "Aceitunas", "Berenjena", "Cebolla", "Champiñones", 
+      "Calabacín", "Espinacas", "Maíz dulce", "Pimientos", "Rúcula", 
+      "Tomate", "Atún", "Camarones", "Anchoas", "Tocino", "Boloñesa", 
+      "Jamón", "Pollo", "Huevo", "Pepperoni", "Mozzarella"
+    ]
   },
   portuguese: {
     entries: "Entradas",
@@ -27,7 +41,14 @@ export const menuTranslations = {
     pastas: "Massas",
     meats: "Carnes & Sanduíches",
     fish: "Peixes",
-    desserts: "Sobremesas"
+    desserts: "Sobremesas",
+    extraIngredients: "Ingredientes Extras",
+    ingredientsList: [
+      "Abacaxi", "Alcaparras", "Azeitonas", "Berinjela", "Cebola", "Cogumelos", 
+      "Curgete", "Espinafre", "Milho Doce", "Pimentões", "Rúcula", 
+      "Tomate", "Atum", "Camarão", "Anchovas", "Bacon", "Bolonhesa", 
+      "Presunto", "Frango", "Ovo", "Pepperoni", "Mozzarella"
+    ]
   },
   german: {
     entries: "Vorspeisen",
@@ -37,7 +58,14 @@ export const menuTranslations = {
     pastas: "Pasta",
     meats: "Fleischgerichte & Sandwiches",
     fish: "Fisch",
-    desserts: "Desserts"
+    desserts: "Desserts",
+    extraIngredients: "Zusätzliche Zutaten",
+    ingredientsList: [
+      "Ananas", "Kapern", "Oliven", "Aubergine", "Zwiebel", "Pilze", 
+      "Zucchini", "Spinat", "Mais", "Paprika", "Rucola", 
+      "Tomate", "Thunfisch", "Garnelen", "Sardellen", "Speck", "Bolognese", 
+      "Schinken", "Huhn", "Ei", "Pepperoni", "Mozzarella"
+    ]
   },
   italian: {
     entries: "Antipasti",
@@ -47,7 +75,14 @@ export const menuTranslations = {
     pastas: "Paste",
     meats: "Carni & Panini",
     fish: "Pesce",
-    desserts: "Dolci"
+    desserts: "Dolci",
+    extraIngredients: "Ingredienti Extra",
+    ingredientsList: [
+      "Ananas", "Capperi", "Olive", "Melanzane", "Cipolla", "Funghi", 
+      "Zucchine", "Spinaci", "Mais", "Peperoni", "Rucola", 
+      "Pomodoro", "Tonno", "Gamberetti", "Acciughe", "Pancetta", "Bolognese", 
+      "Prosciutto", "Pollo", "Uovo", "Pepperoni", "Mozzarella"
+    ]
   },
   french: {
     entries: "Entrées",
@@ -57,7 +92,14 @@ export const menuTranslations = {
     pastas: "Pâtes",
     meats: "Viandes & Sandwichs",
     fish: "Poissons",
-    desserts: "Desserts"
+    desserts: "Desserts",
+    extraIngredients: "Ingrédients Supplémentaires",
+    ingredientsList: [
+      "Ananas", "Câpres", "Olives", "Aubergine", "Oignon", "Champignons", 
+      "Courgette", "Épinards", "Maïs doux", "Poivrons", "Roquette", 
+      "Tomate", "Thon", "Crevettes", "Anchois", "Bacon", "Bolognaise", 
+      "Jambon", "Poulet", "Œuf", "Pepperoni", "Mozzarella"
+    ]
   },
   dutch: {
     entries: "Voorgerechten",
@@ -67,7 +109,14 @@ export const menuTranslations = {
     pastas: "Pasta",
     meats: "Vleesgerechten & Broodjes",
     fish: "Vis",
-    desserts: "Nagerechten"
+    desserts: "Nagerechten",
+    extraIngredients: "Extra Ingrediënten",
+    ingredientsList: [
+      "Ananas", "Kappertjes", "Olijven", "Aubergine", "Ui", "Champignons", 
+      "Courgette", "Spinazie", "Suikermaïs", "Paprika", "Rucola", 
+      "Tomaat", "Tonijn", "Garnalen", "Ansjovis", "Spek", "Bolognese", 
+      "Ham", "Kip", "Ei", "Pepperoni", "Mozzarella"
+    ]
   },
   russian: {
     entries: "Закуски",
@@ -77,7 +126,14 @@ export const menuTranslations = {
     pastas: "Паста",
     meats: "Мясо и Сэндвичи",
     fish: "Рыба",
-    desserts: "Десерты"
+    desserts: "Десерты",
+    extraIngredients: "Дополнительные ингредиенты",
+    ingredientsList: [
+      "Ананас", "Каперсы", "Оливки", "Баклажан", "Лук", "Грибы", 
+      "Цуккини", "Шпинат", "Кукуруза", "Перец", "Руккола", 
+      "Томат", "Тунец", "Креветки", "Анчоусы", "Бекон", "Болоньезе", 
+      "Ветчина", "Курица", "Яйцо", "Пепперони", "Моцарелла"
+    ]
   },
   ukrainian: {
     entries: "Перші страви",
@@ -87,6 +143,13 @@ export const menuTranslations = {
     pastas: "Паста",
     meats: "М'ясні страви та Сендвічі",
     fish: "Риба",
-    desserts: "Десерти"
+    desserts: "Десерти",
+    extraIngredients: "Додаткові інгредієнти",
+    ingredientsList: [
+      "Ананас", "Каперси", "Оливки", "Баклажан", "Цибуля", "Гриби", 
+      "Цукіні", "Шпинат", "Кукурудза", "Перець", "Рукола", 
+      "Томат", "Тунець", "Креветки", "Анчоуси", "Бекон", "Болоньєзе", 
+      "Ветчина", "Курка", "Яйце", "Пеппероні", "Моцарела"
+    ]
   }
 };

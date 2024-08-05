@@ -78,9 +78,17 @@ const MenuScreen = () => {
           ))}
         </div>
 
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
           {currentMenu.length > 0 ? currentMenu.map(renderMenuItem) : <p className="col-span-full text-center text-xl text-white">No items available</p>}
         </div>
+
+        {menuType === 'pizzas' && (
+          <div className="text-center my-4 p-4 bg-white bg-opacity-80 rounded-lg shadow-md">
+            <h2 className="text-2xl font-semibold text-black mb-2">{menuTranslations[selectedLanguage].extraIngredients}:</h2>
+            <p className="text-lg text-gray-700">{menuTranslations[selectedLanguage].ingredientsList.join(', ')}</p>
+          </div>
+        )}
       </div>
     </div>
   );
