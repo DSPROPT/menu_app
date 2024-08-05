@@ -39,4 +39,37 @@ To get a local copy up and running, follow these simple steps:
 1. Clone the repository
    ```sh
    git clone https://github.com/your-username/restaurant-menu-app.git
+2. Navigate to the project directory
+   ```sh
+   cd restaurant-menu-app
+3. Install dependencies
+   ```sh
+   npm install
+
+### Usage
+To start the development server, run:
+```sh
+npm run dev
+
+Open http://localhost:3000 to view the app in your browser.
+
+To build the app for production, run:
+```sh
+npm run build
+
+The build artifacts will be stored in the dist/ directory.
+
+### Contributing
+Contributions are what make the open-source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+## Fork the Project
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+Push to the Branch (git push origin feature/AmazingFeature)
+Open a Pull Request
+License
+Distributed under the MIT License. See LICENSE for more information.
+
+Contact
+DSPRO - www.dss-pro.pt
 
