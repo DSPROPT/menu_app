@@ -50,7 +50,6 @@ To get a local copy up and running, follow these simple steps:
 
 ### Usage
 1. To start the development server, run:
-
    ```sh
    npm run dev
 
