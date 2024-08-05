@@ -49,14 +49,14 @@ To get a local copy up and running, follow these simple steps:
    npm install
 
 ### Usage
-To start the development server, run:
+1. To start the development server, run:
 
    ```sh
    npm run dev
 
 Open http://localhost:3000 to view the app in your browser.
 
-To build the app for production, run:
+2. To build the app for production, run:
    ```sh
    npm run build
 
