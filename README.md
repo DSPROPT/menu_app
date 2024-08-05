@@ -50,14 +50,15 @@ To get a local copy up and running, follow these simple steps:
 
 ### Usage
 To start the development server, run:
-```sh
-npm run dev
+
+   ```sh
+   npm run dev
 
 Open http://localhost:3000 to view the app in your browser.
 
 To build the app for production, run:
-```sh
-npm run build
+   ```sh
+   npm run build
 
 The build artifacts will be stored in the dist/ directory.
 
