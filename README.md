@@ -73,4 +73,9 @@ License
 Distributed under the MIT License. See LICENSE for more information.
 
 Contact
+<<<<<<< HEAD
 DSPRO - www.dss-pro.pt
+=======
+DSPRO - www.dss-pro.pt
+
+>>>>>>> 4e541898069296055c32a67b732dba2ff53966ca
