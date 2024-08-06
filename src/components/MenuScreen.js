@@ -1,7 +1,9 @@
+// MenuScreen.js
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import MenuItemCard from './MenuItemCard';
 import PizzaItemCard from './PizzaItemCard';
+//import DrinkItemCard from './DrinkItemCard'; 
 import { menus } from './menu/menu';
 import { menuTranslations } from './menu_translations';
 import MenuOfDay from './MenuOfDay';
@@ -18,14 +20,14 @@ const flags = {
   ukrainian: '/flags/ukrainian.png',
 };
 
-const menuTypes = ['entries', 'pizzas', 'salads', 'risottos', 'pastas', 'meats', 'fish', 'desserts', 'menuOfDay'];
+const menuTypes = ['entries', 'pizzas', 'salads', 'risottos', 'pastas', 'meats', 'fish', 'desserts', 'drinks', 'menuOfDay'];
 
 const MenuScreen = () => {
   const { state } = useLocation();
   const language = state?.language || 'english';
   const [menuType, setMenuType] = useState('entries');
   const [selectedLanguage, setSelectedLanguage] = useState(language);
-  const [currentMenu, setCurrentMenu] = useState([]);
+  const [currentMenu, setCurrentMenu] = useState({});
 
   const menuOfDayData = {
     english: menus.menuOfDay.english,
@@ -42,21 +44,26 @@ const MenuScreen = () => {
   useEffect(() => {
     if (menuType !== 'menuOfDay') {
       const menuData = menus[menuType][selectedLanguage];
-      setCurrentMenu(menuData || []);
+      setCurrentMenu(menuData || {});
     }
   }, [selectedLanguage, menuType]);
 
-  const renderMenuItem = (item) => {
-    const commonProps = {
-      ...item,
-      language: selectedLanguage
-    };
+  
 
-    if (menuType === 'pizzas') {
-      return <PizzaItemCard key={item.id} {...commonProps} />;
-    } else {
-      return <MenuItemCard key={item.id} {...commonProps} />;
-    }
+  const renderMenuItems = () => {
+    
+    return currentMenu.map(item => {
+      const commonProps = {
+        ...item,
+        language: selectedLanguage
+      };
+
+      if (menuType === 'pizzas') {
+        return <PizzaItemCard key={item.id} {...commonProps} />;
+      } else {
+        return <MenuItemCard key={item.id} {...commonProps} />;
+      }
+    });
   };
 
   return (
@@ -91,7 +98,7 @@ const MenuScreen = () => {
           <MenuOfDay language={selectedLanguage} menuOfDay={menuOfDayData[selectedLanguage]} />
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-            {currentMenu.length > 0 ? currentMenu.map(renderMenuItem) : <p className="col-span-full text-center text-xl text-white">No items available</p>}
+            {Object.keys(currentMenu).length > 0 ? renderMenuItems() : <p className="col-span-full text-center text-xl text-white">No items available</p>}
           </div>
         )}
 

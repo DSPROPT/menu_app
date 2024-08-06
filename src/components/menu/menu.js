@@ -99,6 +99,17 @@ import { menuOfDay as dutchMenuOfDay } from './dutch/menu_of_day';
 import { menuOfDay as russianMenuOfDay } from './russian/menu_of_day';
 import { menuOfDay as ukrainianMenuOfDay } from './ukrainian/menu_of_day';
 
+// Drinks
+import { drinks as englishDrinks } from './english/drinks';
+import { drinks as spanishDrinks } from './spanish/drinks';
+import { drinks as portugueseDrinks } from './portuguese/drinks';
+import { drinks as germanDrinks } from './german/drinks';
+import { drinks as italianDrinks } from './italian/drinks';
+import { drinks as frenchDrinks } from './french/drinks';
+import { drinks as dutchDrinks } from './dutch/drinks';
+import { drinks as russianDrinks } from './russian/drinks';
+import { drinks as ukrainianDrinks } from './ukrainian/drinks';
+
 // Exporting the combined menu
 export const menus = {
   pizzas: {
@@ -199,5 +210,16 @@ export const menus = {
     dutch: dutchMenuOfDay,
     russian: russianMenuOfDay,
     ukrainian: ukrainianMenuOfDay
+  },
+  drinks: {
+    english: englishDrinks,
+    spanish: spanishDrinks,
+    portuguese: portugueseDrinks,
+    german: germanDrinks,
+    italian: italianDrinks,
+    french: frenchDrinks,
+    dutch: dutchDrinks,
+    russian: russianDrinks,
+    ukrainian: ukrainianDrinks
   }
 };
