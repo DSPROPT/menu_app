@@ -25,8 +25,6 @@ export const drinks =  [
       { id: "mojito_maracuja", name: "Мохито Маракуйя", price: "6€", description: "Мохито с вкусом маракуйи.", ingredients: ["Белый ром", "Сахар", "Сок лайма", "Газированная вода", "Мята", "Маракуйя"], imageKey: "mojito_maracuja" },
       { id: "poncha_regional", name: "Региональная Понча", price: "3.50€", description: "Традиционный мадерийский коктейль с бренди.", ingredients: ["Бренди", "Мед", "Лимонный сок"], imageKey: "poncha_regional" },
       { id: "poncha_maracuja", name: "Понча Маракуйя", price: "3.50€", description: "Традиционный мадерийский коктейль с маракуйей.", ingredients: ["Бренди", "Мед", "Маракуйя"], imageKey: "poncha_maracuja" },
-      { id: "gin_tonic", name: "Джин-тоник", price: "7€", description: "Освежающий коктейль с джином и тоником.", ingredients: ["Джин", "Тоник", "Лайм"], imageKey: "gin_tonic" },
-      { id: "caipirinha_maracuja", name: "Кайпиринья Маракуйя", price: "5.50€", description: "Кайпиринья с вкусом маракуйи.", ingredients: ["Кашаса", "Сахар", "Лайм", "Маракуйя"], imageKey: "caipirinha_maracuja" },
       { id: "carolans", name: "Кароланс", price: "4€", description: "Ирландский кремовый ликер.", ingredients: ["Ирландский виски", "Сливки", "Мед"], imageKey: "carolans" },
       { id: "pinha_colada", name: "Пина Колада", price: "5€", description: "Классический тропический коктейль с ромом и кокосовым молоком.", ingredients: ["Белый ром", "Кокосовое молоко", "Ананасовый сок"], imageKey: "pinha_colada" },
       { id: "cuba_libre", name: "Куба Либре (Ром)", price: "4€", description: "Классический коктейль с ромом и колой.", ingredients: ["Белый ром", "Кола", "Сок лайма"], imageKey: "cuba_livre_rum" },

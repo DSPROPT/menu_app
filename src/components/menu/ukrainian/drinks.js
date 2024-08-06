@@ -24,7 +24,6 @@ export const drinks = [
       { id: "aperol_spritz", name: "Апероль Шпріц", price: "6€", description: "Італійський коктейль з Аперолем, Просекко і газованою водою.", ingredients: ["Апероль", "Просекко", "Газована вода"], imageKey: "aperol_spritz" },
       { id: "mojito_maracuja", name: "Мохіто з Маракуйєю", price: "6€", description: "Мохіто зі смаком маракуї.", ingredients: ["Білий ром", "Цукор", "Сік лайма", "Газована вода", "М'ята", "Маракуйя"], imageKey: "mojito_maracuja" },
       { id: "poncha_regional", name: "Регіональна Понча", price: "3.50€", description: "Традиційний коктейль Мадейри з бренді.", ingredients: ["Бренді", "Мед", "Лимонний сік"], imageKey: "poncha_regional" },
-      { id: "caipirinha_maracuja", name: "Кайпірінья з Маракуйєю", price: "5€", description: "Бразильський коктейль з кашасою і маракуйєю.", ingredients: ["Кашаса", "Цукор", "Лайм", "Маракуйя"], imageKey: "caipirinha_maracuja" },
       { id: "carolans", name: "Carolans", price: "4€", description: "Ірландський кремовий лікер.", ingredients: ["Ірландський віскі", "Крем", "Мед"], imageKey: "carolans" },
       { id: "pinha_colada", name: "Піна Колада", price: "5€", description: "Класичний тропічний коктейль з ромом і кокосовим молоком.", ingredients: ["Білий ром", "Кокосове молоко", "Ананасовий сік"], imageKey: "pinha_colada" },
       { id: "cuba_libre", name: "Куба Лібре (Ром)", price: "4€", description: "Класичний коктейль з ромом і колою.", ingredients: ["Білий ром", "Кола", "Сік лайма"], imageKey: "cuba_livre_rum" },
