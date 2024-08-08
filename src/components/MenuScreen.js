@@ -20,7 +20,7 @@ const flags = {
   ukrainian: '/flags/ukrainian.png',
 };
 
-const menuTypes = ['entries', 'pizzas', 'salads', 'risottos', 'pastas', 'meats', 'fish', 'desserts', 'drinks', 'menuOfDay'];
+const menuTypes = ['entries', 'pizzas', 'salads', 'risottos', 'pastas', 'meats', 'fish', 'desserts', 'coffees', 'drinks', 'menuOfDay'];
 
 const MenuScreen = () => {
   const { state } = useLocation();
@@ -80,7 +80,7 @@ const MenuScreen = () => {
         <div className="flex flex-wrap justify-center py-4">
           {menuTypes.map(type => (
             <button key={type} onClick={() => setMenuType(type)}
-              className={`mx-1 my-1 px-4 py-2 rounded-lg text-black font-medium ${menuType === type ? 'bg-green-500' : 'bg-gray-100 hover:bg-gray-200'}`}>
+              className={`mx-1 my-1 px-4 py-2 rounded-lg text-black font-medium text-xs ${menuType === type ? 'bg-green-500' : 'bg-gray-100 hover:bg-gray-200'}`}>
               {menuTranslations[selectedLanguage][type]}
             </button>
           ))}
