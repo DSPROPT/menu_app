@@ -1,41 +1,147 @@
-export const drinks =  [
-      { id: "pepsi", name: "Pepsi", price: "2€", description: "Refrescante bebida gaseosa.", ingredients: ["Agua carbonatada", "Azúcar", "Colorante de caramelo", "Ácido fosfórico", "Cafeína"], imageKey: "pepsi" },
-      { id: "pepsi_max", name: "Pepsi Max", price: "2€", description: "Bebida gaseosa sin azúcar con sabor máximo.", ingredients: ["Agua carbonatada", "Edulcorantes", "Colorante de caramelo", "Ácido fosfórico", "Cafeína"], imageKey: "pepsi_max" },
-      { id: "coca_cola", name: "Coca-Cola", price: "2€", description: "Bebida gaseosa clásica.", ingredients: ["Agua carbonatada", "Azúcar", "Colorante de caramelo", "Ácido fosfórico", "Cafeína"], imageKey: "coca_cola" },
-      { id: "brisa_laranja", name: "Brisa Naranja", price: "2€", description: "Bebida gaseosa con sabor a naranja.", ingredients: ["Agua carbonatada", "Azúcar", "Jugo concentrado de naranja", "Ácido cítrico", "Aromas naturales"], imageKey: "brisa_laranja" },
-      { id: "brisa_maracuja", name: "Brisa Maracuyá", price: "2€", description: "Bebida gaseosa con sabor a maracuyá.", ingredients: ["Agua carbonatada", "Azúcar", "Jugo concentrado de maracuyá", "Ácido cítrico", "Aromas naturales"], imageKey: "brisa_maracuja" },
-      { id: "brisa_maca", name: "Brisa Manzana", price: "2€", description: "Bebida gaseosa con sabor a manzana.", ingredients: ["Agua carbonatada", "Azúcar", "Jugo concentrado de manzana", "Ácido cítrico", "Aromas naturales"], imageKey: "brisa_maca" },
-      { id: "laranjada", name: "Laranjada", price: "2€", description: "Bebida gaseosa con sabor a naranja.", ingredients: ["Agua carbonatada", "Azúcar", "Jugo concentrado de naranja", "Ácido cítrico", "Aromas naturales"], imageKey: "laranjada" },
-      { id: "compal_pessego", name: "Compal Melocotón", price: "2€", description: "Néctar de melocotón.", ingredients: ["Agua", "Puré de melocotón", "Azúcar", "Ácido cítrico", "Aromas naturales"], imageKey: "compal_pessego" },
-      { id: "compal_maracuja", name: "Compal Maracuyá", price: "2€", description: "Néctar de maracuyá.", ingredients: ["Agua", "Puré de maracuyá", "Azúcar", "Ácido cítrico", "Aromas naturales"], imageKey: "compal_maracuja" },
-      { id: "7up", name: "7UP", price: "2€", description: "Bebida gaseosa con sabor a limón y lima.", ingredients: ["Agua carbonatada", "Azúcar", "Ácido cítrico", "Aromas naturales"], imageKey: "7up" },
-      { id: "agua_033l", name: "Agua 0.33L", price: "2€", description: "Agua natural refrescante.", ingredients: ["Agua"], imageKey: "agua_033l" },
-      { id: "agua_15l", name: "Agua 1.5L", price: "3€", description: "Agua natural refrescante.", ingredients: ["Agua"], imageKey: "agua_15l" },   
-      { id: "coral_020", name: "Coral 0.20", price: "1.50€", description: "Cerveza ligera y rubia.", ingredients: ["Agua", "Malta de cebada", "Lúpulo", "Levadura"], imageKey: "coral_020" },
-      { id: "coral_030", name: "Coral 0.30", price: "2€", description: "Cerveza rubia refrescante.", ingredients: ["Agua", "Malta de cebada", "Lúpulo", "Levadura"], imageKey: "coral_030" },
-      { id: "coral_050", name: "Coral 0.50", price: "3.5€", description: "Cerveza rubia completa.", ingredients: ["Agua", "Malta de cebada", "Lúpulo", "Levadura"], imageKey: "coral_050" },
-      { id: "heineken", name: "Heineken", price: "2.50€", description: "Cerveza rubia internacional.", ingredients: ["Agua", "Malta de cebada", "Lúpulo", "Levadura"], imageKey: "heineken" },
-      { id: "corona", name: "Corona", price: "5€", description: "Cerveza rubia mexicana.", ingredients: ["Agua", "Malta de cebada", "Granos no malteados", "Lúpulo"], imageKey: "corona" },   
-      { id: "mojito", name: "Mojito", price: "6€", description: "Refrescante cóctel cubano con lima y menta.", ingredients: ["Ron blanco", "Azúcar", "Jugo de lima", "Agua con gas", "Menta"], imageKey: "mojito" },
-      { id: "daikiri", name: "Daiquiri", price: "6€", description: "Cóctel clásico con ron, lima y azúcar.", ingredients: ["Ron blanco", "Azúcar", "Jugo de lima"], imageKey: "daikiri" },
-      { id: "caipirinha", name: "Caipirinha", price: "5€", description: "Cóctel brasileño con cachaça y lima.", ingredients: ["Cachaça", "Azúcar", "Lima"], imageKey: "caipirinha" },
-      { id: "sangria_copo", name: "Sangría en Vaso", price: "5.5€", description: "Sangría tradicional.", ingredients: ["Vino tinto", "Azúcar", "Jugo de naranja", "Agua con gas", "Frutas picadas"], imageKey: "sangria_copo" },
-      { id: "sangria_1l_2l", name: "Sangría 1L y 2L", price: "16€ / 28€", description: "Jarra de sangría tradicional.", ingredients: ["Vino tinto", "Azúcar", "Jugo de naranja", "Agua con gas", "Frutas picadas"], imageKey: "sangria_1l_2l" },
-      { id: "aperol_spritz", name: "Aperol Spritz", price: "6€", description: "Cóctel italiano con Aperol, Prosecco y agua con gas.", ingredients: ["Aperol", "Prosecco", "Agua con gas"], imageKey: "aperol_spritz" },
-      { id: "mojito_maracuja", name: "Mojito Maracuyá", price: "6€", description: "Mojito con sabor a maracuyá.", ingredients: ["Ron blanco", "Azúcar", "Jugo de lima", "Agua con gas", "Menta", "Maracuyá"], imageKey: "mojito_maracuja" },
-      { id: "poncha_regional", name: "Poncha Regional", price: "3.50€", description: "Cóctel tradicional de Madeira con brandy.", ingredients: ["Brandy", "Miel", "Jugo de limón"], imageKey: "poncha_regional" },
-      { id: "poncha_maracuja", name: "Poncha Maracuyá", price: "3.50€", description: "Cóctel tradicional de Madeira con maracuyá.", ingredients: ["Brandy", "Miel", "Maracuyá"], imageKey: "poncha_maracuja" },      
-      { id: "carolans", name: "Carolans", price: "4€", description: "Licor de crema irlandesa.", ingredients: ["Whisky irlandés", "Crema", "Miel"], imageKey: "carolans" },
-      { id: "pinha_colada", name: "Piña Colada", price: "5€", description: "Cóctel tropical clásico con ron y leche de coco.", ingredients: ["Ron blanco", "Leche de coco", "Jugo de piña"], imageKey: "pinha_colada" },
-      { id: "cuba_libre", name: "Cuba Libre (Ron)", price: "4€", description: "Cóctel clásico con ron y cola.", ingredients: ["Ron blanco", "Cola", "Jugo de lima"], imageKey: "cuba_livre_rum" },
-      { id: "tequila_sunrise", name: "Tequila Sunrise", price: "5€", description: "Cóctel brillante con tequila y granadina.", ingredients: ["Tequila", "Jugo de naranja", "Granadina"], imageKey: "tequila_sunrise" },
-      { id: "irishcoffee", name: "Café Irlandés", price: "4.95€", description: "Cóctel de café con whisky irlandés y crema.", ingredients: ["Whisky irlandés", "Café", "Azúcar", "Crema"], imageKey: "irishcoffee" },
-      { id: "vodka", name: "Vodka", price: "4€", description: "Destilado clásico.", ingredients: ["Vodka"], imageKey: "vodka" },
-      { id: "jack_daniels", name: "Jack Daniel's", price: "4.5€", description: "Popular whisky de Tennessee.", ingredients: ["Whisky de Tennessee"], imageKey: "jack_daniels" },
-      { id: "black_level", name: "Black Level", price: "5.5€", description: "Whisky escocés suave.", ingredients: ["Whisky escocés"], imageKey: "black_level" },
-      { id: "red_level", name: "Red Level", price: "4.5€", description: "Whisky escocés mezclado.", ingredients: ["Whisky escocés"], imageKey: "red_level" },
-      { id: "nikita", name: "Nikita", price: "5€", description: "Refrescante cóctel de Madeira con cerveza y helado.", ingredients: ["Cerveza", "Helado de vainilla", "Piña"], imageKey: "nikita" },
-      { id: "baileyscoffee", name: "Café con Baileys", price: "5€", description: "Cóctel cremoso de café con Baileys.", ingredients: ["Crema irlandesa Baileys", "Café"], imageKey: "baileyscoffee" }
-    ];
-
+export const drinks = [
+  {
+    id: "passion_fruit_caipirinha",
+    name: "Caipirinha de Maracuyá",
+    price: "8€",
+    description: "Una variación tropical del clásico cóctel brasileño que combina el sabor exótico del maracuyá con el refrescante limón y el dulce azúcar.",
+    ingredients: ["Maracuyá", "Cachaça", "Limón", "Azúcar", "Hielo"],
+    imageKey: "passion_fruit_caipirinha"
+  },
+  {
+    id: "mojito",
+    name: "Mojito",
+    price: "8€",
+    description: "Un cóctel cubano refrescante que combina perfectamente la acidez del limón, la dulzura del azúcar y la frescura de la menta con el ron.",
+    ingredients: ["Ron blanco", "Hojas de menta", "Limón", "Azúcar", "Agua con gas", "Hielo"],
+    imageKey: "mojito"
+  },
+  {
+    id: "nikita_strawberry",
+    name: "Nikita de Fresa",
+    price: "8€",
+    description: "Un cóctel cremoso y delicioso que combina la dulzura de la fresa con un toque de vainilla, ofreciendo una bebida suave y refrescante.",
+    ingredients: ["Fresa", "Helado de vainilla", "Vino blanco", "Cerveza", "Hielo"],
+    imageKey: "nikita_strawberry"
+  },
+  {
+    id: "pina_colada",
+    name: "Piña Colada",
+    price: "8€",
+    description: "Un cóctel tropical clásico elaborado con crema de coco, jugo dulce de piña y ron, creando una sensación de estar en una isla paradisíaca.",
+    ingredients: ["Ron blanco", "Crema de coco", "Jugo de piña", "Hielo"],
+    imageKey: "pina_colada"
+  },
+  {
+    id: "mojito_vino_rosado",
+    name: "Mojito de Vino Rosado",
+    price: "6€",
+    description: "Una variación única del clásico Mojito, utilizando vino rosado que añade notas afrutadas y florales, creando una bebida ligera y refrescante.",
+    ingredients: ["Vino rosado", "Hojas de menta", "Limón", "Azúcar", "Agua con gas", "Hielo"],
+    imageKey: "mojito_vino_rosado"
+  },
+  {
+    id: "red_wine_sangria",
+    name: "Sangría de Vino Tinto",
+    price: "5.50€",
+    description: "Un ponche español tradicional elaborado con vino tinto, frutas frescas y un toque de brandy, que ofrece el equilibrio perfecto entre sabores dulces y ácidos.",
+    ingredients: ["Vino tinto", "Brandy", "Jugo de naranja", "Limón", "Frutas variadas", "Azúcar", "Hielo"],
+    imageKey: "red_wine_sangria"
+  },
+  {
+    id: "white_wine_sangria",
+    name: "Sangría de Vino Blanco",
+    price: "5.50€",
+    description: "Una sangría ligera y refrescante hecha con vino blanco, cítricos y un toque de brandy, perfecta para los días calurosos.",
+    ingredients: ["Vino blanco", "Brandy", "Jugo de limón", "Frutas variadas", "Azúcar", "Hielo"],
+    imageKey: "white_wine_sangria"
+  },
+  {
+    id: "poncha",
+    name: "Poncha",
+    price: "3.50€",
+    description: "Un cóctel tradicional de Madeira elaborado con aguardiente de caña, miel y limón, que ofrece un sabor dulce y ácido.",
+    ingredients: ["Aguardiente de caña", "Miel", "Jugo de limón"],
+    imageKey: "poncha"
+  },
+  {
+    id: "electric_limonade",
+    name: "Limonada Eléctrica",
+    price: "8€",
+    description: "Un cóctel vibrante y refrescante con un sorprendente tono azul, que combina sabores de limón con un toque de dulzura - perfecto para un impulso de energía.",
+    ingredients: ["Blue Curaçao", "Vodka", "Limonada", "Limón", "Hielo"],
+    imageKey: "electric_limonade"
+  },
+  {
+    id: "passion_fruit_mojito",
+    name: "Mojito de Maracuyá",
+    price: "8€",
+    description: "Una variación afrutada del clásico Mojito, donde el maracuyá se mezcla con menta y limón, creando una bebida exótica y refrescante.",
+    ingredients: ["Ron blanco", "Hojas de menta", "Maracuyá", "Limón", "Azúcar", "Agua con gas", "Hielo"],
+    imageKey: "passion_fruit_mojito"
+  },
+  {
+    id: "tequila",
+    name: "Tequila",
+    price: "8€",
+    description: "Un shot de tequila de alta calidad, servido con una rodaja de limón y una pizca de sal, transmitiendo el espíritu de México.",
+    ingredients: ["Tequila", "Limón", "Sal"],
+    imageKey: "tequila"
+  },
+  {
+    id: "mojito_de_naranja",
+    name: "Mojito de Naranja",
+    price: "8€",
+    description: "Una refrescante variación del Mojito con la adición de naranja al clásico combo de menta y limón.",
+    ingredients: ["Ron blanco", "Hojas de menta", "Jugo de naranja", "Limón", "Azúcar", "Agua con gas", "Hielo"],
+    imageKey: "mojito_de_naranja"
+  },
+  {
+    id: "daiquiri_de_morango",
+    name: "Daiquiri de Fresa",
+    price: "8€",
+    description: "Un delicioso cóctel congelado que combina fresa, ron y limón, creando un sabor dulce y ácido.",
+    ingredients: ["Ron blanco", "Fresa", "Jugo de limón", "Azúcar", "Hielo"],
+    imageKey: "daiquiri_de_morango"
+  },
+  {
+    id: "margaritas",
+    name: "Margarita",
+    price: "8€",
+    description: "Un clásico cóctel mexicano con la combinación perfecta de tequila, limón y triple sec, servido con un borde salado.",
+    ingredients: ["Tequila", "Jugo de limón", "Triple sec", "Sal", "Hielo"],
+    imageKey: "margaritas"
+  },
+  {
+    id: "sex_on_the_beach",
+    name: "Sex on the Beach",
+    price: "8€",
+    description: "Un cóctel afrutado y vibrante que combina vodka, licor de durazno, jugo de arándano y jugo de naranja para un placer veraniego.",
+    ingredients: ["Vodka", "Licor de durazno", "Jugo de arándano", "Jugo de naranja", "Hielo"],
+    imageKey: "sex_on_the_beach"
+  },
+  {
+    id: "gin_tonic",
+    name: "Gin Tonic",
+    price: "8€",
+    description: "Un refrescante cóctel clásico hecho con ginebra de alta calidad y tónica, adornado con una rodaja de limón o lima.",
+    ingredients: ["Ginebra", "Tónica", "Limón", "Hielo"],
+    imageKey: "gin_tonic"
+  },
+  {
+    id: "cuba_libre",
+    name: "Cuba Libre",
+    price: "8€",
+    description: "Un cóctel simple pero satisfactorio que combina ron con cola y limón para una bebida refrescante.",
+    ingredients: ["Ron", "Cola", "Limón", "Hielo"],
+    imageKey: "cuba_libre"
+  },
+  {
+    id: "margarita_blue",
+    name: "Margarita Azul",
+    price: "8€",
+    description: "Una variación encantadora de la clásica Margarita, elaborada con la adición de curaçao azul para un sabor vibrante y refrescante.",
+    ingredients: ["Tequila", "Curaçao azul", "Jugo de limón", "Triple sec", "Sal", "Hielo"],
+    imageKey: "margarita_blue"
+  },
   
+];

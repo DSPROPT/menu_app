@@ -1,41 +1,147 @@
-export const drinks =  [
-      { id: "pepsi", name: "Pepsi", price: "2€", description: "Erfrischendes kohlensäurehaltiges Getränk.", ingredients: ["Kohlensäurehaltiges Wasser", "Zucker", "Karamellfarbstoff", "Phosphorsäure", "Koffein"], imageKey: "pepsi" },
-      { id: "pepsi_max", name: "Pepsi Max", price: "2€", description: "Zuckerfreies kohlensäurehaltiges Getränk mit maximalem Geschmack.", ingredients: ["Kohlensäurehaltiges Wasser", "Süßstoffe", "Karamellfarbstoff", "Phosphorsäure", "Koffein"], imageKey: "pepsi_max" },
-      { id: "coca_cola", name: "Coca-Cola", price: "2€", description: "Klassisches kohlensäurehaltiges Getränk.", ingredients: ["Kohlensäurehaltiges Wasser", "Zucker", "Karamellfarbstoff", "Phosphorsäure", "Koffein"], imageKey: "coca_cola" },
-      { id: "brisa_laranja", name: "Brisa Orange", price: "2€", description: "Erfrischendes Orangen-Limonaden-Getränk.", ingredients: ["Kohlensäurehaltiges Wasser", "Zucker", "Orangensaftkonzentrat", "Zitronensäure", "Natürliche Aromen"], imageKey: "brisa_laranja" },
-      { id: "brisa_maracuja", name: "Brisa Passion", price: "2€", description: "Limonade mit Passionsfruchtgeschmack.", ingredients: ["Kohlensäurehaltiges Wasser", "Zucker", "Passionsfruchtkonzentrat", "Zitronensäure", "Natürliche Aromen"], imageKey: "brisa_maracuja" },
-      { id: "brisa_maca", name: "Brisa Apfel", price: "2€", description: "Erfrischende Apfel-Limonade.", ingredients: ["Kohlensäurehaltiges Wasser", "Zucker", "Apfelsaftkonzentrat", "Zitronensäure", "Natürliche Aromen"], imageKey: "brisa_maca" },
-      { id: "laranjada", name: "Orangenlimonade", price: "2€", description: "Limonade mit Orangengeschmack.", ingredients: ["Kohlensäurehaltiges Wasser", "Zucker", "Orangensaftkonzentrat", "Zitronensäure", "Natürliche Aromen"], imageKey: "laranjada" },
-      { id: "compal_pessego", name: "Compal Pfirsich", price: "2€", description: "Pfirsich-Nektar.", ingredients: ["Wasser", "Pfirsichpulpe", "Zucker", "Zitronensäure", "Natürliche Aromen"], imageKey: "compal_pessego" },
-      { id: "compal_maracuja", name: "Compal Passion", price: "2€", description: "Passionsfrucht-Nektar.", ingredients: ["Wasser", "Passionsfruchtpulpe", "Zucker", "Zitronensäure", "Natürliche Aromen"], imageKey: "compal_maracuja" },
-      { id: "7up", name: "7UP", price: "2€", description: "Zitronen-Limetten-Limonade.", ingredients: ["Kohlensäurehaltiges Wasser", "Zucker", "Zitronensäure", "Natürliche Aromen"], imageKey: "7up" },
-      { id: "agua_033l", name: "Wasser 0.33L", price: "2€", description: "Erfrischendes stilles Wasser.", ingredients: ["Wasser"], imageKey: "agua_033l" },
-      { id: "agua_15l", name: "Wasser 1.5L", price: "3€", description: "Erfrischendes stilles Wasser.", ingredients: ["Wasser"], imageKey: "agua_15l" },    
-      { id: "coral_020", name: "Coral 0.20", price: "1.50€", description: "Leichtes Lagerbier.", ingredients: ["Wasser", "Gerstenmalz", "Hopfen", "Hefe"], imageKey: "coral_020" },
-      { id: "coral_030", name: "Coral 0.30", price: "2€", description: "Erfrischendes Lagerbier.", ingredients: ["Wasser", "Gerstenmalz", "Hopfen", "Hefe"], imageKey: "coral_030" },
-      { id: "coral_050", name: "Coral 0.50", price: "3.5€", description: "Vollmundiges Lagerbier.", ingredients: ["Wasser", "Gerstenmalz", "Hopfen", "Hefe"], imageKey: "coral_050" },
-      { id: "heineken", name: "Heineken", price: "2.50€", description: "Internationales Lagerbier.", ingredients: ["Wasser", "Gerstenmalz", "Hopfen", "Hefe"], imageKey: "heineken" },
-      { id: "corona", name: "Corona", price: "5€", description: "Mexikanisches helles Lagerbier.", ingredients: ["Wasser", "Gerstenmalz", "Nicht gemälzte Getreide", "Hopfen"], imageKey: "corona" },   
-      { id: "mojito", name: "Mojito", price: "6€", description: "Erfrischender kubanischer Cocktail mit Limette und Minze.", ingredients: ["Weißer Rum", "Zucker", "Limettensaft", "Sodawasser", "Minze"], imageKey: "mojito" },
-      { id: "daikiri", name: "Daiquiri", price: "6€", description: "Klassischer Cocktail mit Rum, Limette und Zucker.", ingredients: ["Weißer Rum", "Zucker", "Limettensaft"], imageKey: "daikiri" },
-      { id: "caipirinha", name: "Caipirinha", price: "5€", description: "Brasilianischer Cocktail mit Cachaça und Limette.", ingredients: ["Cachaça", "Zucker", "Limette"], imageKey: "caipirinha" },
-      { id: "sangria_copo", name: "Sangria Glas", price: "5.5€", description: "Glas traditioneller Sangria.", ingredients: ["Rotwein", "Zucker", "Orangensaft", "Sodawasser", "Obststücke"], imageKey: "sangria_copo" },
-      { id: "sangria_1l_2l", name: "Sangria 1L & 2L", price: "16€ / 28€", description: "Krug traditioneller Sangria.", ingredients: ["Rotwein", "Zucker", "Orangensaft", "Sodawasser", "Obststücke"], imageKey: "sangria_1l_2l" },
-      { id: "aperol_spritz", name: "Aperol Spritz", price: "6€", description: "Italienischer Cocktail mit Aperol, Prosecco und Sodawasser.", ingredients: ["Aperol", "Prosecco", "Sodawasser"], imageKey: "aperol_spritz" },
-      { id: "mojito_maracuja", name: "Mojito Passion", price: "6€", description: "Mojito mit Passionsfruchtgeschmack.", ingredients: ["Weißer Rum", "Zucker", "Limettensaft", "Sodawasser", "Minze", "Passionsfrucht"], imageKey: "mojito_maracuja" },
-      { id: "poncha_regional", name: "Poncha Regional", price: "3.50€", description: "Traditioneller Madeira-Cocktail mit Aguardente.", ingredients: ["Aguardente", "Honig", "Zitronensaft"], imageKey: "poncha_regional" },
-      { id: "poncha_maracuja", name: "Poncha Passion", price: "3.50€", description: "Poncha mit Passionsfruchtgeschmack.", ingredients: ["Aguardente", "Honig", "Passionsfruchtsaft"], imageKey: "poncha_maracuja" },
-      { id: "poncha_pescador", name: "Poncha Fischer", price: "3.50€", description: "Poncha der Fischer mit Zitrone und Honig.", ingredients: ["Aguardente", "Honig", "Zitronensaft"], imageKey: "poncha_pescador" },
-      { id: "carolans", name: "Carolans", price: "5€", description: "Irischer Sahnelikör.", ingredients: ["Irischer Whiskey", "Sahne", "Honig"], imageKey: "carolans" },
-      { id: "pinha_colada", name: "Pina Colada", price: "5€", description: "Klassischer tropischer Cocktail mit Rum und Kokosnussmilch.", ingredients: ["Weißer Rum", "Kokosnussmilch", "Ananassaft"], imageKey: "pinha_colada" },
-      { id: "cuba_libre", name: "Cuba Libre (Rum)", price: "4€", description: "Klassischer Cocktail mit Rum und Cola.", ingredients: ["Weißer Rum", "Cola", "Limettensaft"], imageKey: "cuba_livre_rum" },
-      { id: "tequila_sunrise", name: "Tequila Sunrise", price: "5€", description: "Lebhafter Cocktail mit Tequila und Grenadine.", ingredients: ["Tequila", "Orangensaft", "Grenadine"], imageKey: "tequila_sunrise" },
-      { id: "irishcoffee", name: "Irish Coffee", price: "4.95€", description: "Kaffee-Cocktail mit irischem Whiskey und Sahne.", ingredients: ["Irischer Whiskey", "Kaffee", "Zucker", "Sahne"], imageKey: "irishcoffee" },
-      { id: "vodka", name: "Wodka", price: "4€", description: "Klassisches destilliertes Getränk.", ingredients: ["Wodka"], imageKey: "vodka" },
-      { id: "jack_daniels", name: "Jack Daniels", price: "4.5€", description: "Beliebter Tennessee Whiskey.", ingredients: ["Tennessee Whiskey"], imageKey: "jack_daniels" },
-      { id: "black_level", name: "Black Level", price: "5.5€", description: "Weicher und gemischter schottischer Whisky.", ingredients: ["Schottischer Whisky"], imageKey: "black_level" },
-      { id: "red_level", name: "Red Level", price: "4.5€", description: "Gemischter schottischer Whisky.", ingredients: ["Schottischer Whisky"], imageKey: "red_level" },
-      { id: "nikita", name: "Nikita", price: "5€", description: "Erfrischender Madeira-Cocktail mit Bier und Eis.", ingredients: ["Bier", "Vanilleeis", "Ananas"], imageKey: "nikita" },
-      { id: "baileyscoffee", name: "Baileys Kaffee", price: "5€", description: "Cremiger Kaffee-Cocktail mit Baileys.", ingredients: ["Baileys Irish Cream", "Kaffee"], imageKey: "baileyscoffee" }
-    ];
-  
+export const drinks = [
+    {
+      id: "passion_fruit_caipirinha",
+      name: "Passionsfrucht Caipirinha",
+      price: "8€",
+      description: "Eine tropische Variante des klassischen brasilianischen Cocktails, die den exotischen Geschmack der Passionsfrucht mit der Frische von Limette und Rohrzucker kombiniert.",
+      ingredients: ["Passionsfrucht", "Cachaça", "Limette", "Zucker", "Eis"],
+      imageKey: "passion_fruit_caipirinha"
+    },
+    {
+      id: "mojito",
+      name: "Mojito",
+      price: "8€",
+      description: "Ein erfrischender kubanischer Cocktail, der die Säure der Limette, die Süße des Zuckers und die Frische der Minze perfekt mit Rum kombiniert.",
+      ingredients: ["Weißer Rum", "Minzblätter", "Limette", "Zucker", "Sodawasser", "Eis"],
+      imageKey: "mojito"
+    },
+    {
+      id: "nikita_strawberry",
+      name: "Nikita Erdbeere",
+      price: "8€",
+      description: "Ein cremiger und köstlicher Cocktail, der die Süße von Erdbeeren mit einer Note von Vanille verbindet und so ein geschmeidiges und erfrischendes Getränk bietet.",
+      ingredients: ["Erdbeeren", "Vanilleeis", "Weißwein", "Bier", "Eis"],
+      imageKey: "nikita_strawberry"
+    },
+    {
+      id: "pina_colada",
+      name: "Piña Colada",
+      price: "8€",
+      description: "Ein klassischer tropischer Cocktail aus reichhaltiger Kokoscreme, süßem Ananassaft und Rum, der das entspannte Inselgefühl heraufbeschwört.",
+      ingredients: ["Weißer Rum", "Kokoscreme", "Ananassaft", "Eis"],
+      imageKey: "pina_colada"
+    },
+    {
+      id: "mojito_vino_rosado",
+      name: "Mojito mit Roséwein",
+      price: "6€",
+      description: "Eine einzigartige Variante des klassischen Mojitos, bei der Roséwein verwendet wird, um eine fruchtige und blumige Note hinzuzufügen, die ihn leicht und erfrischend macht.",
+      ingredients: ["Roséwein", "Minzblätter", "Limette", "Zucker", "Sodawasser", "Eis"],
+      imageKey: "mojito_vino_rosado"
+    },
+    {
+      id: "red_wine_sangria",
+      name: "Sangria mit Rotwein",
+      price: "5.50€",
+      description: "Ein traditioneller spanischer Punsch, der aus Rotwein, frischen Früchten und einem Schuss Brandy hergestellt wird und ein perfektes Gleichgewicht zwischen süßen und säuerlichen Aromen bietet.",
+      ingredients: ["Rotwein", "Brandy", "Orangensaft", "Zitrone", "Gemischte Früchte", "Zucker", "Eis"],
+      imageKey: "red_wine_sangria"
+    },
+    {
+      id: "white_wine_sangria",
+      name: "Sangria mit Weißwein",
+      price: "5.50€",
+      description: "Eine leichte und erfrischende Sangria, hergestellt aus Weißwein, Zitrusfrüchten und einem Schuss Brandy, perfekt für heiße Tage.",
+      ingredients: ["Weißwein", "Brandy", "Zitronensaft", "Gemischte Früchte", "Zucker", "Eis"],
+      imageKey: "white_wine_sangria"
+    },
+    {
+      id: "poncha",
+      name: "Poncha",
+      price: "3.50€",
+      description: "Ein traditioneller Madeirenser Cocktail, der aus Zuckerrohrschnaps, Honig und Zitrone hergestellt wird und einen süß-säuerlichen Geschmack bietet.",
+      ingredients: ["Aguardente de Cana", "Honig", "Zitronensaft"],
+      imageKey: "poncha"
+    },
+    {
+      id: "electric_limonade",
+      name: "Electric Limonade",
+      price: "8€",
+      description: "Ein spritziger und erfrischender Cocktail mit einem auffälligen blauen Farbton, der zitronige Aromen mit einem Hauch von Süße kombiniert - perfekt für ein belebendes Erlebnis.",
+      ingredients: ["Blue Curaçao", "Wodka", "Limonade", "Limette", "Eis"],
+      imageKey: "electric_limonade"
+    },
+    {
+      id: "passion_fruit_mojito",
+      name: "Passionsfrucht Mojito",
+      price: "8€",
+      description: "Eine fruchtige Variante des klassischen Mojitos, bei der Passionsfrucht mit Minze und Limette zu einem exotischen und erfrischenden Getränk gemischt wird.",
+      ingredients: ["Weißer Rum", "Minzblätter", "Passionsfrucht", "Limette", "Zucker", "Sodawasser", "Eis"],
+      imageKey: "passion_fruit_mojito"
+    },
+    {
+      id: "tequila",
+      name: "Tequila",
+      price: "8€",
+      description: "Ein Premium-Tequila-Shot, serviert mit einem Limettenviertel und einer Prise Salz, verkörpert den Geist Mexikos.",
+      ingredients: ["Tequila", "Limette", "Salz"],
+      imageKey: "tequila"
+    },
+    {
+      id: "mojito_de_naranja",
+      name: "Orangen Mojito",
+      price: "8€",
+      description: "Eine erfrischende Variante des Mojitos, bei der eine Prise Orange zur klassischen Kombination aus Minze und Limette hinzugefügt wird.",
+      ingredients: ["Weißer Rum", "Minzblätter", "Orangensaft", "Limette", "Zucker", "Sodawasser", "Eis"],
+      imageKey: "mojito_de_naranja"
+    },
+    {
+      id: "daiquiri_de_morango",
+      name: "Erdbeer Daiquiri",
+      price: "8€",
+      description: "Ein köstlicher gefrorener Cocktail, der Erdbeeren mit Rum und Limette vermischt und einen süß-säuerlichen Geschmack bietet.",
+      ingredients: ["Weißer Rum", "Erdbeeren", "Limettensaft", "Zucker", "Eis"],
+      imageKey: "daiquiri_de_morango"
+    },
+    {
+      id: "margaritas",
+      name: "Margaritas",
+      price: "8€",
+      description: "Ein klassischer mexikanischer Cocktail mit der perfekten Mischung aus Tequila, Limette und Triple Sec, serviert mit einem gesalzenen Rand.",
+      ingredients: ["Tequila", "Limettensaft", "Triple Sec", "Salz", "Eis"],
+      imageKey: "margaritas"
+    },
+    {
+      id: "sex_on_the_beach",
+      name: "Sex on the Beach",
+      price: "8€",
+      description: "Ein fruchtiger und lebhafter Cocktail, der Wodka, Pfirsichlikör, Cranberrysaft und Orangensaft zu einem sommerlichen Genuss vereint.",
+      ingredients: ["Wodka", "Pfirsichlikör", "Cranberrysaft", "Orangensaft", "Eis"],
+      imageKey: "sex_on_the_beach"
+    },
+    {
+      id: "gin_tonic",
+      name: "GIN TONIC",
+      price: "8€",
+      description: "Ein erfrischender und klassischer Cocktail aus Premium-Gin und Tonic Water, garniert mit einer Zitronen- oder Limettenscheibe.",
+      ingredients: ["Gin", "Tonic Water", "Zitrone", "Eis"],
+      imageKey: "gin_tonic"
+    },
+    {
+      id: "cuba_libre",
+      name: "Cuba Libre",
+      price: "8€",
+      description: "Ein einfacher, aber zufriedenstellender Cocktail, bei dem Rum mit Cola und einem Schuss Limette zu einem erfrischenden Getränk kombiniert wird.",
+      ingredients: ["Rum", "Cola", "Limette", "Eis"],
+      imageKey: "cuba_libre"
+    },
+    {
+      id: "margarita_blue",
+      name: "Margarita Blue",
+      price: "8€",
+      description: "Eine auffällige Variante der klassischen Margarita, hergestellt mit Blue Curaçao für eine lebendige Farbe und einen zitronigen Kick.",
+      ingredients: ["Tequila", "Blue Curaçao", "Limettensaft", "Triple Sec", "Salz", "Eis"],
+      imageKey: "margarita_blue"
+    },
+    
+  ];
