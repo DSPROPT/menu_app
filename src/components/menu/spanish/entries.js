@@ -8,13 +8,14 @@ export const entries = [
     imageKey: "pane"
   },
   {
-    id: "gamberi-com-salsa-all-aglio",
-    name: "Brochetas de Camarones al Ajo",
-    description: "Jugosos camarones a la parrilla bañados en una fragante salsa de ajo y hierbas. ¡Una elección exquisita para los amantes de los mariscos que buscan un toque de elegancia!",
-    ingredients: ["Camarones a la Parrilla", "Ajo", "Aceite de Oliva", "Hierbas"],
+    id: "gamberi-al-aglio",
+    name: "Camarones al Ajo Clásicos",
+    description: "Camarones tiernos cocidos en un aceite infusionado con ajo rico y aromático, adornados con hierbas frescas para realzar el sabor. Perfecto para una comida deliciosa y rápida.",
+    ingredients: ["Camarones", "Ajo", "Aceite de oliva", "Hierbas frescas"],
     price: "€10.50",
-    imageKey: "gamberi-com-salsa-all-aglio"
+    imageKey: "gamberi-al-aglio"
   },
+  
   {
     id: "ali-di-pollo-in-agrodolce",
     name: "Alitas de Pollo Agridulces",

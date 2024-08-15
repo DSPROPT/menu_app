@@ -8,12 +8,12 @@ export const entries = [
     imageKey: "pane"
   },
   {
-    id: "gamberi-com-salsa-all-aglio",
-    name: "Garlic Prawn Skewers",
-    description: "Succulent grilled shrimp basked in a fragrant garlic and herb sauce. An exquisite choice for seafood lovers seeking a touch of elegance!",
-    ingredients: ["Grilled Shrimp", "Garlic", "Olive Oil", "Herbs"],
+    id: "gamberi-al-aglio",
+    name: "Classic Garlic Shrimp",
+    description: "Tender shrimp cooked in a rich and aromatic garlic-infused oil, garnished with fresh herbs to enhance the flavor. Perfect for a delicious and quick meal.",
+    ingredients: ["Shrimp", "Garlic", "Olive Oil", "Fresh Herbs"],
     price: "€10.50",
-    imageKey: "gamberi-com-salsa-all-aglio"
+    imageKey: "gamberi-al-aglio"
   },
   {
     id: "ali-di-pollo-in-agrodolce",

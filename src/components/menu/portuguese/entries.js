@@ -8,13 +8,14 @@ export const entries = [
     imageKey: "pane"
   },
   {
-    id: "gamberi-com-salsa-all-aglio",
-    name: "Espetinhos de Camarão ao Alho",
-    description: "Suculentos camarões grelhados banhados em um perfumado molho de alho e ervas. Uma escolha requintada para os amantes de frutos do mar que procuram um toque de elegância!",
-    ingredients: ["Camarões Grelhados", "Alho", "Azeite de Oliva", "Ervas"],
+    id: "gamberi-al-aglio",
+    name: "Camarão ao Alho Clássico",
+    description: "Camarões tenros cozidos em um óleo infundido com alho rico e aromático, guarnecidos com ervas frescas para realçar o sabor. Perfeito para uma refeição deliciosa e rápida.",
+    ingredients: ["Camarão", "Alho", "Azeite de oliva", "Ervas frescas"],
     price: "€10.50",
-    imageKey: "gamberi-com-salsa-all-aglio"
+    imageKey: "gamberi-al-aglio"
   },
+  
   {
     id: "ali-di-pollo-in-agrodolce",
     name: "Asas de Frango Agridoce",

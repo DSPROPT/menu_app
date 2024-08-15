@@ -8,13 +8,14 @@ export const entries = [
     imageKey: "pane"
   },
   {
-    id: "gamberi-com-salsa-all-aglio",
-    name: "Knoflook Garnalen Spiesjes",
-    description: "Sappige gegrilde garnalen gebaad in een geurige knoflook- en kruiden saus. Een voortreffelijke keuze voor zeevruchtenliefhebbers die een vleugje elegantie zoeken!",
-    ingredients: ["Gegrilde Garnalen", "Knoflook", "Olijfolie", "Kruiden"],
+    id: "gamberi-al-aglio",
+    name: "Klassieke Garnalen met Knoflook",
+    description: "Malse garnalen gekookt in een rijke en aromatische knoflookolie, gegarneerd met verse kruiden om de smaak te versterken. Perfect voor een heerlijke en snelle maaltijd.",
+    ingredients: ["Garnalen", "Knoflook", "Olijfolie", "Verse Kruiden"],
     price: "€10.50",
-    imageKey: "gamberi-com-salsa-all-aglio"
+    imageKey: "gamberi-al-aglio"
   },
+  
   {
     id: "ali-di-pollo-in-agrodolce",
     name: "Zoetzure Kippenvleugels",

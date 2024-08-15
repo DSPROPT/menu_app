@@ -8,12 +8,12 @@ export const entries = [
     imageKey: "pane"
   },
   {
-    id: "gamberi-com-salsa-all-aglio",
-    name: "Brochettes de Crevettes à l'Ail",
-    description: "Des crevettes grillées juteuses baignées dans une sauce parfumée à l'ail et aux herbes. Un choix exquis pour les amateurs de fruits de mer à la recherche d'une touche d'élégance!",
-    ingredients: ["Crevettes Grillées", "Ail", "Huile d'Olive", "Herbes"],
+    id: "gamberi-al-aglio",
+    name: "Crevettes à l'Ail Classique",
+    description: "Crevettes tendres cuites dans une huile infusée à l'ail riche et aromatique, garnies d'herbes fraîches pour rehausser la saveur. Parfait pour un repas délicieux et rapide.",
+    ingredients: ["Crevettes", "Ail", "Huile d'olive", "Herbes fraîches"],
     price: "€10.50",
-    imageKey: "gamberi-com-salsa-all-aglio"
+    imageKey: "gamberi-al-aglio"
   },
   {
     id: "ali-di-pollo-in-agrodolce",

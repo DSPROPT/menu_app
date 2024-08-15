@@ -8,13 +8,15 @@ export const entries = [
     imageKey: "pane"
   },
   {
-    id: "gamberi-com-salsa-all-aglio",
-    name: "Knoblauch-Garnelen-Spieße",
-    description: "Saftige gegrillte Garnelen, die in einer duftenden Knoblauch-Kräuter-Sauce baden. Eine exquisite Wahl für Meeresfrüchte-Liebhaber, die einen Hauch von Eleganz suchen!",
-    ingredients: ["Gegrillte Garnelen", "Knoblauch", "Olivenöl", "Kräuter"],
+    id: "gamberi-al-aglio",
+    name: "Gamberi all'Aglio Classici",
+    description: "Gamberi teneri cotti in un olio infuso di aglio ricco e aromatico, guarniti con erbe fresche per esaltarne il sapore. Perfetto per un pasto delizioso e veloce.",
+    ingredients: ["Gamberi", "Aglio", "Olio d'oliva", "Erbe fresche"],
     price: "€10.50",
-    imageKey: "gamberi-com-salsa-all-aglio"
+    imageKey: "gamberi-al-aglio"
   },
+  
+  
   {
     id: "ali-di-pollo-in-agrodolce",
     name: "Süß-saure Hähnchenflügel",
