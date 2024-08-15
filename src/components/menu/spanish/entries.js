@@ -89,6 +89,15 @@ export const entries = [
     imageKey: "zuppa-verdura"
   },
   {
+    id: "crema-di-spinaci",
+    name: "Crema de Espinacas",
+    description: "Una crema de espinacas suave y rica en sabores, bellamente presentada con un chorrito de reducción de balsámico y un toque de hierbas. Ideal para una comida nutritiva y reconfortante.",
+    ingredients: ["Espinacas", "Crema", "Caldo vegetal", "Reducción de Balsámico", "Hierbas"],
+    price: "€6.00",
+    imageKey: "crema-di-spinaci"
+  },
+  
+  {
     id: "zuppa-pesce",
     name: "Sopa de Camarones o Pescado",
     description: "Disfruta de nuestra rica y sabrosa sopa, cocida a fuego lento con camarones frescos o pescado, en un sabroso caldo de verduras infusionado con hierbas.",

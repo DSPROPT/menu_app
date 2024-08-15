@@ -9,12 +9,13 @@ export const entries = [
   },
   {
     id: "gamberi-al-aglio",
-    name: "Gamberi all'Aglio Classici",
-    description: "Gamberi teneri cotti in un olio infuso di aglio ricco e aromatico, guarniti con erbe fresche per esaltarne il sapore. Perfetto per un pasto delizioso e veloce.",
-    ingredients: ["Gamberi", "Aglio", "Olio d'oliva", "Erbe fresche"],
+    name: "Klassische Knoblauchgarnelen",
+    description: "Zarte Garnelen, gekocht in einem reichen und aromatischen Knoblauchöl, garniert mit frischen Kräutern, um den Geschmack zu verstärken. Perfekt für eine köstliche und schnelle Mahlzeit.",
+    ingredients: ["Garnelen", "Knoblauch", "Olivenöl", "Frische Kräuter"],
     price: "€10.50",
     imageKey: "gamberi-al-aglio"
   },
+  
   
   
   {
@@ -89,6 +90,15 @@ export const entries = [
     price: "€6.00",
     imageKey: "zuppa-verdura"
   },
+  {
+    id: "crema-di-spinaci",
+    name: "Spinatcremesuppe",
+    description: "Eine samtige und reichhaltig schmeckende Spinatcremesuppe, schön präsentiert mit einem Spritzer Balsamico-Reduktion und einem Hauch von Kräutern. Ideal für eine nährende und tröstende Mahlzeit.",
+    ingredients: ["Spinat", "Sahne", "Gemüsebrühe", "Balsamico-Reduktion", "Kräuter"],
+    price: "€6.00",
+    imageKey: "crema-di-spinaci"
+  },
+  
   {
     id: "zuppa-pesce",
     name: "Garnelen- oder Fischsuppe",

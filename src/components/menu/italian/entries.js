@@ -88,6 +88,14 @@ export const entries = [
     imageKey: "zuppa-verdura"
   },
   {
+    id: "crema-di-spinaci",
+    name: "Crema di Spinaci",
+    description: "Una crema di spinaci vellutata e ricca di sapori, presentata splendidamente con un filo di riduzione di balsamico e un pizzico di erbe aromatiche. Ideale per un pasto nutriente e confortante.",
+    ingredients: ["Spinaci", "Panna", "Brodo vegetale", "Riduzione di Balsamico", "Erbe"],
+    price: "€6.00",
+    imageKey: "crema-di-spinaci"
+  },
+  {
     id: "zuppa-pesce",
     name: "Zuppa di Gamberi o Pesce",
     description: "Goditi la nostra zuppa ricca e saporita, cotta a fuoco lento con gamberi freschi o pesce in un brodo di verdure saporito infuso con erbe.",

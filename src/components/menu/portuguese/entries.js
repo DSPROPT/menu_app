@@ -88,6 +88,16 @@ export const entries = [
     price: "€6.00",
     imageKey: "zuppa-verdura"
   },
+  
+  {
+    id: "crema-di-spinaci",
+    name: "Sopa Creme de Espinafre",
+    description: "Uma sopa creme de espinafre aveludada e rica em sabores, apresentada com um toque de redução de balsâmico e uma pitada de ervas. Ideal para uma refeição nutritiva e reconfortante.",
+    ingredients: ["Espinafre", "Creme", "Caldo de legumes", "Redução de Balsâmico", "Ervas"],
+    price: "€6.00",
+    imageKey: "crema-di-spinaci"
+  },
+  
   {
     id: "zuppa-pesce",
     name: "Sopa de Camarão ou Peixe",

@@ -88,6 +88,15 @@ export const entries = [
     imageKey: "zuppa-verdura"
   },
   {
+    id: "crema-di-spinaci",
+    name: "Soupe Crème d'Épinards",
+    description: "Une soupe crème d'épinards veloutée et riche en saveurs, présentée avec un filet de réduction de balsamique et une pincée d'herbes. Idéale pour un repas nourrissant et réconfortant.",
+    ingredients: ["Épinards", "Crème", "Bouillon de légumes", "Réduction de Balsamique", "Herbes"],
+    price: "€6.00",
+    imageKey: "crema-di-spinaci"
+  },
+  
+  {
     id: "zuppa-pesce",
     name: "Soupe de Crevettes ou de Poisson",
     description: "Savourez notre soupe riche et savoureuse, mijotée avec des crevettes fraîches ou du poisson, dans un bouillon de légumes savoureux infusé aux herbes.",

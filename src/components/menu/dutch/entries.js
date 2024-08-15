@@ -89,6 +89,15 @@ export const entries = [
     imageKey: "zuppa-verdura"
   },
   {
+    id: "crema-di-spinaci",
+    name: "Spinazie Roomsoep",
+    description: "Een fluweelzachte en rijk smakende spinazie roomsoep, mooi gepresenteerd met een druppel balsamico reductie en een snufje kruiden. Ideaal voor een voedzame en troostende maaltijd.",
+    ingredients: ["Spinazie", "Room", "Groentebouillon", "Balsamico Reductie", "Kruiden"],
+    price: "€6.00",
+    imageKey: "crema-di-spinaci"
+  },
+  
+  {
     id: "zuppa-pesce",
     name: "Garnalen of Vissensoep",
     description: "Geniet van onze rijke, smaakvolle soep, gesudderd met verse garnalen of vis in een hartige groentebouillon doordrenkt met kruiden.",

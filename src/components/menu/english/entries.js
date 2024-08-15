@@ -88,6 +88,15 @@ export const entries = [
     imageKey: "zuppa-verdura"
   },
   {
+    id: "crema-di-spinaci",
+    name: "Spinach Cream Soup",
+    description: "A velvety smooth and richly flavored spinach cream soup, beautifully presented with a drizzle of balsamic reduction and a sprinkle of herbs. Ideal for a nourishing and comforting meal.",
+    ingredients: ["Spinach", "Cream", "Vegetable Broth", "Balsamic Reduction", "Herbs"],
+    price: "€6.00",
+    imageKey: "crema-di-spinaci"
+  },
+  
+  {
     id: "zuppa-pesce",
     name: "Shrimp or Fish Soup",
     description: "Indulge in our rich, flavorful soup, simmered with either fresh shrimp or fish, in a savory vegetable broth infused with herbs.",
