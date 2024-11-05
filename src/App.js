@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Welcome from './components/Welcome';
 import MenuScreen from './components/MenuScreen';
@@ -7,8 +7,22 @@ import CookiePolicy from './components/CookiePolicy';
 function App() {
   const [cookiesAccepted, setCookiesAccepted] = useState(false);
 
+  useEffect(() => {
+    // Check if consent has already been given in localStorage
+    const consent = localStorage.getItem('cookiesAccepted');
+    if (consent === 'true') {
+      setCookiesAccepted(true);
+    }
+  }, []);
+
   const handleAcceptCookies = () => {
     setCookiesAccepted(true);
+    localStorage.setItem('cookiesAccepted', 'true'); // Save consent in localStorage
+  };
+
+  const handleDeclineCookies = () => {
+    setCookiesAccepted(true); // This hides the cookie banner regardless
+    localStorage.setItem('cookiesAccepted', 'false'); // Save decline in localStorage, if needed
   };
 
   return (
@@ -21,9 +35,10 @@ function App() {
             <Route path="/cookie-policy" element={<CookiePolicy />} />
           </Routes>
 
+          {/* Cookie Consent Pop-up */}
           {!cookiesAccepted && (
             <div className="fixed bottom-5 left-1/2 transform -translate-x-1/2 bg-white border border-gray-200 rounded-lg shadow-md p-4 max-w-md text-center z-50">
-              <h2 className="text-sm font-semibold">Cookies Consent</h2>
+              <h2 className="text-sg font-semibold">Cookies Consent</h2>
               <p className="text-[12px] text-gray-600">
                 This website uses cookies to help you have a superior and more admissible browsing experience on the website.
                 <a href="/cookie-policy" target="_blank" rel="noopener noreferrer" className="text-green-700 ml-1">Read more</a>
@@ -31,13 +46,13 @@ function App() {
               <div className="mt-4">
                 <button
                   onClick={handleAcceptCookies}
-                  className="px-4 py-2 bg-green-700 text-white text-[12px] rounded mr-2"
+                  className="px-4 py-2 bg-green-700 text-white rounded mr-2 text-[12px]"
                 >
                   Accept
                 </button>
                 <button
-                  onClick={() => setCookiesAccepted(true)}
-                  className="px-4 py-2 bg-gray-300 text-black text-[12px] rounded"
+                  onClick={handleDeclineCookies}
+                  className="px-4 py-2 bg-gray-300 text-black rounded text-[12px]"
                 >
                   Decline
                 </button>
