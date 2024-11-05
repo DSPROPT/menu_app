@@ -85,7 +85,7 @@ const Welcome = () => {
       <footer className="w-full bg-cover bg-center text-white py-4 rounded-md" style={{
           backgroundImage: `linear-gradient(rgba(0, 100, 0, 0.6), rgba(0, 100, 0, 0.6)), url('https://wallpapers.com/images/hd/abstract-italy-flag-ggo2dh23l4nj8nrz.jpg')`
         }}>
-          <p className="text-sm font-bold text-center">
+          <p className="text-[12px] font-bold text-center">
             Copyright ©2024 All rights reserved | Site Created by 
             <a href="https://www.dss-pro.pt/" target="_blank" rel="noopener noreferrer" className="inline-block ml-2">
               <img src="https://www.dss-pro.pt/assets/dspro-IMkxotd7.svg" alt="DSPRO Logo" className="inline h-5" />
