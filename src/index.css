@@ -35,4 +35,10 @@ code {
   object-fit: contain; 
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
