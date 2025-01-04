@@ -20,7 +20,7 @@ const flags = {
   ukrainian: '/flags/ukrainian.png',
 };
 
-const menuTypes = ['entries', 'pizzas', 'salads', 'risottos', 'pastas', 'meats', 'fish', 'desserts', 'coffees', 'drinks', 'menuOfDay'];
+const menuTypes = ['entries', 'pizzas', 'salads', 'risottos', 'pastas', 'meats', 'fish', 'desserts', 'coffees', 'drinks'];
 
 const MenuScreen = () => {
   const { state } = useLocation();
